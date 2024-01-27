@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/w3.css">
+
+    <script>
+        function openKota(namakota) {
+         var i;
+         var x = document.getElementsByClassName("kota");
+         for (i = 0; i < x.length; i++) {
+         x[i].style.display = "none";
+         }
+         document.getElementById(namakota).style.display = "block";
+        }
+    </script>
+
+</head>
+<body style="background-color: #6495ED;">
+    <img src="judul.png" style="width: 100%;">
+    <div class="w3-container">
+    </div>
+    <div class="w3-bar w3-dark-grey">
+        <button class="w3-bar-item w3-button" onclick="openKota('about')">ABOUT</button>
+        <button class="w3-bar-item w3-button" onclick="openKota('new')">HARGA</button>
+        <button class="w3-bar-item w3-button" onclick="openKota('contact')">CONTACT</button>
+        <button class="w3-bar-item w3-button" onclick="openKota('profile')">PROFILE</button>
+        <div class="w3-dropdown-hover">
+            <button class="w3-button">DESCRIPTION</button>
+            <div class="w3-dropdown-content w3-bar-block w3-card-4 w3-dark-grey">
+                <button class="w3-bar-item w3-button" onclick="openKota('sub')">RINGKASAN</button>
+            </div>
+        </div>
+    </div>
+    <div id="about" class="w3-container kota w3-animate-zoom" style="display:none">
+        <p><center>
+            <img src="bandaneira.jpeg" style="width: 20%;">
+			<img src="bandaneira2.jpeg" style="width: 20%;">
+			<img src="bandaneira3.jpeg" style="width: 20%;">
+			<img src="bandaneira4.jpeg" style="width: 20%;">
+            <p style="color: white;">
+			</center>
+            <br>
+            <p style="color: yellow;">
+                AKRASE OPEN TRIP TO BANDA NEIRA
+				SUDAH TERPERCAYA SEJAK TAHUN 2000 DAN SERING MENGADAKAN OPEN TRIP
+			</p>
+        </p>
+    </div>
+    <div id="new" class="w3-container kota" style="display:none">
+        <p>
+            <center>
+                <img src="bandaneira5.jpeg">
+                <h2><p style="color: white;">Start from 3 Jutaan</s>&nbsp; 
+				<br>
+				<label style="color: white;">Harga Sesuai dengan Domisili Masing Masing</label></h2>
+            </center>
+        </p>
+    </div>
+    <div id="contact" class="w3-container kota" style="display:none">
+        <a href="https://google.com/maps/place/Akrase+OpenTrip/@-4.5178804,129.8937602,15z/data=!3m1!4b1!4m6!3m5!1s0x2d15860b887ac3ab:0x6d9d8565c44e2f07!8m2!3d-4.517902!4d129.90406!16zL20vMDQzdnhi?entry=ttu" style="color: rgb(4, 115, 189); text-decoration: none;"><h3><b>MAPS</b></h3></a>
+        <h3 style="color: rgb(194, 194, 1);">EMAIL : akraseoptrip@gmail.com</h3>
+        <h3 style="color: rgb(194, 194, 1);">No Telp : +62 876 5987 2341 </h3>
+    </div>
+    <div id="profile" class="w3-container kota" style="display:none">
+        <center>
+            <p>
+                <img src="profile.jpg" style="width: 20%;">
+                <table style="color: white;">
+                    <tr>
+                        <td>NIM</td>
+                        <td>:</td>
+                        <td>10123166</td>
+                    </tr>
+                    <tr>
+                        <td>NAMA</td>
+                        <td>:</td>
+                        <td>RAKA SETYA PRAMUDYA</td>
+                    </tr>
+                    <tr>
+                        <td>KELAS</td>
+                        <td>:</td>
+                        <td>IF-4</td>
+                    </tr>
+                </table>
+            </p>
+        </center>
+    </div>
+    <div id="sub" class="w3-container kota" style="display:none">
+        <p>
+            <justify>
+			<p><center>
+            <img src="bandaneira.jpeg" style="width: 20%;">
+			</center>
+            <br>
+            <p style="color: yellow;">
+			<center> RINGKASAN </center>
+                1. Explore kota Naira yang penuh dengan keindahannya<br>
+				2. Menikmati keindahan sunset di Benteng Hollandia dengan latar Belakang Gunung Api Banda<br>
+				3. Snorkeling di pulau Kraka dan Lava Flow<br>
+				4. Mengunjungi Pulau Hatta yang terkenal dengan keindahan taman bawah lautnya<br>
+			</p>
+        </p>
+        </p>
+    </div>
+</body>
+</html>
